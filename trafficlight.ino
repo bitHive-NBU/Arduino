@@ -108,7 +108,16 @@ void loop() {
             state = state_6;
             break;
         case state_6:
-            // Handle other states if needed
+            // 1 RED -- 2 RED
+            digitalWrite(LED_Red_1, HIGH);
+            digitalWrite(LED_Yellow_1, LOW);
+            digitalWrite(LED_Green_1, LOW);
+
+            digitalWrite(LED_Red_2, HIGH);
+            digitalWrite(LED_Yellow_2, LOW);
+            digitalWrite(LED_Green_2, LOW);
+            delay(2000);
+            state = state_0;
             break;
     }
 
