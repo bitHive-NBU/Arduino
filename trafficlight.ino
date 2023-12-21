@@ -15,7 +15,8 @@ enum State {
     state_3,
     state_4,
     state_5,
-    state_6
+    state_6,
+    state_7
 };
 
 State state = state_0;
@@ -119,7 +120,7 @@ void loop() {
             delay(2000);
             state = state_7;
             break;
-        case state_7
+        case state_7:
             // 1 RED -- 2 YELLOW-RED
             digitalWrite(LED_Red_1, HIGH);
             digitalWrite(LED_Yellow_1, LOW);
